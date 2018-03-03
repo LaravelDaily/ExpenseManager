@@ -10,6 +10,8 @@ Features:
 
 ![Expense manager screenshot](http://webcoderpro.com/expense-manager-demo.png)
 
+![Expense manager screenshot currency](http://webcoderpro.com/expense-manager-demo-currency.png)
+
 ## How to use
 
 - Clone the repository with __git clone__
