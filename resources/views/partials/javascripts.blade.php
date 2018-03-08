@@ -39,11 +39,11 @@
 
     $('#moneyFormat').maskMoney({
         // The symbol to be displayed before the value entered by the user
-        prefix:'<?php if ( !empty ( $symbol  ) ) { echo $symbol; }  ?>  ', 
+        prefix:'{{ \Auth::user()->currency->symbol }}',
         // The thousands separator
-        thousands:'<?php if (!empty ($moneyFormatThousands)) { echo $moneyFormatThousands; } ?>',
+        thousands:'{{ \Auth::user()->currency->money_format_thousands }}',
         // The decimal separator
-        decimal:'<?php if (!empty ($moneyFormatDecimal)) { echo $moneyFormatDecimal;}  ?>'
+        decimal:'{{ \Auth::user()->currency->money_format_decimal }}'
     }); 
 
     $('#expense, #income').submit(function(){

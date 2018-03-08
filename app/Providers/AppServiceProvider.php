@@ -20,13 +20,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-
-        view()->composer('admin.*', function($view) {
-            $view->with('symbol',  Auth::user()->currency->symbol);
-            $view->with('moneyFormatThousands', Auth::user()->currency->money_format_thousands);
-            $view->with('moneyFormatDecimal', Auth::user()->currency->money_format_decimal);
-        });
-
     }
 
     /**
