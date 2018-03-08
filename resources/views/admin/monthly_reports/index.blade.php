@@ -31,15 +31,15 @@
                     <table class="table table-bordered table-striped">
                         <tr>
                             <th>Income</th>
-                            <td>{{ $symbol . ' ' . number_format($inc_total, 2, $moneyFormatDecimal, $moneyFormatThousands) }}</td>
+                            <td>{{ auth()->user()->currency->symbol . ' ' . number_format($inc_total, 2, auth()->user()->currency->money_format_decimal, auth()->user()->currency->money_format_thousands) }}</td>
                         </tr>
                         <tr>
                             <th>Expenses</th>
-                            <td>{{ $symbol . ' ' . number_format($exp_total, 2, $moneyFormatDecimal, $moneyFormatThousands) }}</td>
+                            <td>{{ auth()->user()->currency->symbol . ' ' . number_format($exp_total, 2, auth()->user()->currency->money_format_decimal, auth()->user()->currency->money_format_thousands) }}</td>
                         </tr>
                         <tr>
                             <th>Profit</th>
-                            <td>{{ $symbol . ' ' . number_format($profit, 2, $moneyFormatDecimal, $moneyFormatThousands) }}</td>
+                            <td>{{ auth()->user()->currency->symbol . ' ' . number_format($profit, 2, auth()->user()->currency->money_format_decimal, auth()->user()->currency->money_format_thousands) }}</td>
                         </tr>
                     </table>
                 </div>
@@ -47,12 +47,12 @@
                     <table class="table table-bordered table-striped">
                         <tr>
                             <th>Income by category</th>
-                            <th>{{ $symbol . ' ' . number_format($inc_total, 2, $moneyFormatDecimal, $moneyFormatThousands) }}</th>
+                            <th>{{ auth()->user()->currency->symbol . ' ' . number_format($inc_total, 2, auth()->user()->currency->money_format_decimal, auth()->user()->currency->money_format_thousands) }}</th>
                         </tr>
                     @foreach($inc_summary as $inc)
                         <tr>
                             <th>{{ $inc['name'] }}</th>
-                            <td>{{ $symbol . ' ' . number_format($inc['amount'], 2, $moneyFormatDecimal, $moneyFormatThousands) }}</td>
+                            <td>{{ auth()->user()->currency->symbol . ' ' . number_format($inc['amount'], 2, auth()->user()->currency->money_format_decimal, auth()->user()->currency->money_format_thousands) }}</td>
                         </tr>
                     @endforeach
                     </table>
@@ -61,12 +61,12 @@
                     <table class="table table-bordered table-striped">
                         <tr>
                             <th>Expenses by category</th>
-                            <th>{{ $symbol . ' ' . number_format($exp_total, 2, $moneyFormatDecimal, $moneyFormatThousands) }}</th>
+                            <th>{{ auth()->user()->currency->symbol . ' ' . number_format($exp_total, 2, auth()->user()->currency->money_format_decimal, auth()->user()->currency->money_format_thousands) }}</th>
                         </tr>
                     @foreach($exp_summary as $inc)
                         <tr>
                             <th>{{ $inc['name'] }}</th>
-                            <td>{{ $symbol . ' ' . number_format($inc['amount'], 2, $moneyFormatDecimal, $moneyFormatThousands) }}</td>
+                            <td>{{ auth()->user()->currency->symbol . ' ' . number_format($inc['amount'], 2, auth()->user()->currency->money_format_decimal, auth()->user()->currency->money_format_thousands) }}</td>
                         </tr>
                     @endforeach
                     </table>
