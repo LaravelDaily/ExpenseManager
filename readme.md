@@ -8,16 +8,12 @@ Features:
 - Multi-tenancy: Ability to register new user who sees only their categories/entries (admin sees all).
 - Formatting currency: ability to add/edit currencies with their formats (comma/dot separation etc.)
 
----
+## Clickable live-demo
 
-### Clickable live-demo
-
-[demo-expenses.quickadminpanel.com/](http://demo-expenses.quickadminpanel.com)
+[demo-expenses.quickadminpanel.com](http://demo-expenses.quickadminpanel.com)
 
 - __Email__: admin@admin.com
 - __Pass__: password
-
----
 
 ![Expense manager screenshot](http://webcoderpro.com/expense-manager-demo.png)
 
