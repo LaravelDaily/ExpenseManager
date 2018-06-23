@@ -12,7 +12,7 @@ Features:
 
 ### Clickable live-demo
 
-[http://demo-expenses.quickadminpanel.com/](demo-expenses.quickadminpanel.com)
+[demo-expenses.quickadminpanel.com/](http://demo-expenses.quickadminpanel.com)
 
 - __Email__: admin@admin.com
 - __Pass__: password
