@@ -15,9 +15,9 @@ Features:
 - __Email__: admin@admin.com
 - __Pass__: password
 
-![Expense manager screenshot](http://webcoderpro.com/expense-manager-demo.png)
+![Expense manager screenshot](https://quickadminpanel.com/assets/pages/demos/demo-expenses-01.png)
 
-![Expense manager screenshot currency](http://webcoderpro.com/expense-manager-demo-currency.png)
+![Expense manager screenshot currency](https://quickadminpanel.com/assets/pages/demos/demo-expenses-02.png)
 
 ## How to use
 
