@@ -1,5 +1,7 @@
 # Laravel 5.5 based system for managing expenses and income
 
+__Notice: we've released newer version of this project, based on Laravel 6 and CoreUI Theme. [Click here](https://github.com/LaravelDaily/QuickAdminPanel-ExpenseManager)__.
+
 It is a demo project for demonstrating what can be generated with [QuickAdminPanel](https://quickadminpanel.com) tool.
 
 Features:
